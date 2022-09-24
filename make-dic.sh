@@ -17,7 +17,7 @@ OLD_FILE="${FILENAME}-cost.csv"
 ls | grep $USER_PREFIX | xargs rm
 
 # move new file and make
-cp ../"${FILENAME}-cost.csv" ./ \
-&& $DICT_INDEX_PATH -f utf-8 -t utf-8 \
-&& make install
+sudo cp ../"${FILENAME}-cost.csv" ./ \
+&& sudo $DICT_INDEX_PATH -f utf-8 -t utf-8 \
+&& sudo make install
 echo "updated ipadic"
