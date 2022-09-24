@@ -1,8 +1,8 @@
 # MeCab in Ubuntu-20.04
 ## システム辞書を再コンパイルする方法
 - MeCabのインストール
-  - `https://qiita.com/ekzemplaro/items/c98c7f6698f130b55d53`
-- `https://zenn.dev/suyaa/articles/4f525a16a016e3`
+  - https://qiita.com/ekzemplaro/items/c98c7f6698f130b55d53
+- https://zenn.dev/suyaa/articles/4f525a16a016e3
   - こちらを採用
 - mecabrcの場所
   - `python3-mecab`を利用する環境では`/usr/local/etc/mecabrc`を探しに行くが、存在しないので、シンボリックリンクを貼って解決する
@@ -12,8 +12,8 @@
   mecabrc -> /etc/mecabrc
   ```
 - 辞書の場所
-  - `https://qiita.com/ekzemplaro/items/c98c7f6698f130b55d53`に従ってインストールすると、`/usr/lib/x86_64-linux-gnu/mecab/dic/mecab-ipadic-neologd`にインストールされるが、こちらはここでは使わない
-  - `https://zenn.dev/suyaa/articles/4f525a16a016e3`に従って進めていくと、`make install`したら、`/usr/lib/x86_64-linux-gnu/mecab/dic/ipadic`が生成されるので、`/etc/mecabrc`のシステム辞書の指し先をこちらにする
+  - [https://qiita.com/ekzemplaro/items/c98c7f6698f130b55d53](https://qiita.com/ekzemplaro/items/c98c7f6698f130b55d53)に従ってインストールすると、`/usr/lib/x86_64-linux-gnu/mecab/dic/mecab-ipadic-neologd`にインストールされるが、こちらはここでは使わない
+  - [https://zenn.dev/suyaa/articles/4f525a16a016e3](https://zenn.dev/suyaa/articles/4f525a16a016e3)に従って進めていくと、`make install`したら、`/usr/lib/x86_64-linux-gnu/mecab/dic/ipadic`が生成されるので、`/etc/mecabrc`のシステム辞書の指し先をこちらにする
   ```
   ;
   ; Configuration file of MeCab
